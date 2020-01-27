@@ -7,8 +7,8 @@ public class Build: MonoBehaviour
     {
         Debug.Log("### BUILDING ###");
         var report = BuildPipeline.BuildPlayer(
-            new[] { "Assets/Scenes/Test.unity" },
-            "Build/Win/Test.exe",
+            new[] { "Assets/Scenes/SampleScene.unity" },
+            "./builds/win64/SampleScene.exe",
             target: BuildTarget.StandaloneWindows64,
             options: BuildOptions.None);
 
