@@ -17,7 +17,7 @@ jobs:
         
         # Build Windows and OSX
         - name: Build Windows Player
-          run: /opt/Unity/Editor/Unity -quit -nographics -silent-crashes -logFile -projectPath "./New Unity Project" -executeMethod Build.Start
+          run: /opt/Unity/Editor/Unity -quit -nographics -silent-crashes -logFile ./build.log -projectPath "./New Unity Project" -executeMethod Build.Start
         - name: Archive Windows Build
           uses: actions/upload-artifact@v1
           with:
